@@ -1,3 +1,5 @@
+require 'pry'
+
 class Garden
   attr_accessor :name
 
@@ -34,5 +36,5 @@ basil.garden = lawn
 
 cucumber = Plant.new(name: 'Cucumber')
 cucumber.garden = lawn
-
+binding.pry
 p lawn.plants
